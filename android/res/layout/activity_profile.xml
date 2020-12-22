@@ -53,17 +53,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="32dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="32dp"
-
+        android:layout_marginStart="20dp"
         android:drawablePadding="10dp"
         android:ems="10"
 
+        android:text="mail"
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/colorWhite"
-        android:text="mail"
-        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="@+id/btnSingle"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/name"
         app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -82,6 +80,23 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/name"
         app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+
+    <Button
+        android:id="@+id/btnMulti"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/btn_bg"
+        android:text="Multiplayer"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnSingle"
+        app:layout_constraintTop_toBottomOf="@+id/btnSingle"
+        app:layout_constraintVertical_bias="0.49" />
 
     <ImageView
         android:id="@+id/flappylogo"
