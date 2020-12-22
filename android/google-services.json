@@ -1,0 +1,262 @@
+{
+  "project_info": {
+    "project_number": "260699372816",
+    "firebase_url": "https://barberapp-2a840.firebaseio.com",
+    "project_id": "barberapp-2a840",
+    "storage_bucket": "barberapp-2a840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260699372816:android:7f4861bca9077ac758b995",
+        "android_client_info": {
+          "package_name": "com.daniel.flappybird"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260699372816-n86lcllpaof28mqk5118ifbu042n0vhs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.daniel.flappybird",
+            "certificate_hash": "0aff68342237316b78c9e4d9c16ceecd8e8fb3c9"
+          }
+        },
+        {
+          "client_id": "260699372816-hqii6vo4rknd7tlcs5sjdkv8776g5v8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrP2A8xgtj27fer_nR4vbzLhtZC8AcCwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260699372816-dhcfn0c23pq279hn2rgp1302v25atg3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260699372816:android:892fc7f3b12c268358b995",
+        "android_client_info": {
+          "package_name": "com.example.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260699372816-hqii6vo4rknd7tlcs5sjdkv8776g5v8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrP2A8xgtj27fer_nR4vbzLhtZC8AcCwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260699372816-dhcfn0c23pq279hn2rgp1302v25atg3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260699372816:android:5c2f71aba2b9d0f658b995",
+        "android_client_info": {
+          "package_name": "com.example.barberapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260699372816-lv8lm3sk6ri8tsa3mc5kgcfi11rs0t7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.barberapp",
+            "certificate_hash": "0aff68342237316b78c9e4d9c16ceecd8e8fb3c9"
+          }
+        },
+        {
+          "client_id": "260699372816-hqii6vo4rknd7tlcs5sjdkv8776g5v8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrP2A8xgtj27fer_nR4vbzLhtZC8AcCwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260699372816-dhcfn0c23pq279hn2rgp1302v25atg3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260699372816:android:65e94114a683792558b995",
+        "android_client_info": {
+          "package_name": "com.example.prenotazione"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260699372816-amd40l1k42fhj8fh43koe0otj3eiprch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prenotazione",
+            "certificate_hash": "0aff68342237316b78c9e4d9c16ceecd8e8fb3c9"
+          }
+        },
+        {
+          "client_id": "260699372816-hqii6vo4rknd7tlcs5sjdkv8776g5v8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrP2A8xgtj27fer_nR4vbzLhtZC8AcCwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260699372816-dhcfn0c23pq279hn2rgp1302v25atg3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260699372816:android:4ea0be27c03f726b58b995",
+        "android_client_info": {
+          "package_name": "com.example.prenotazionetampone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260699372816-5ee4ttng5smdouir12koggtj46uj2tmd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prenotazionetampone",
+            "certificate_hash": "0aff68342237316b78c9e4d9c16ceecd8e8fb3c9"
+          }
+        },
+        {
+          "client_id": "260699372816-hqii6vo4rknd7tlcs5sjdkv8776g5v8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrP2A8xgtj27fer_nR4vbzLhtZC8AcCwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260699372816-dhcfn0c23pq279hn2rgp1302v25atg3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260699372816:android:48d69704dd793ff358b995",
+        "android_client_info": {
+          "package_name": "com.jovanovic.stefan.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260699372816-etkpodtf7h64r7v1u4l9ivqkt1kn2nt1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jovanovic.stefan.testapp",
+            "certificate_hash": "0aff68342237316b78c9e4d9c16ceecd8e8fb3c9"
+          }
+        },
+        {
+          "client_id": "260699372816-hqii6vo4rknd7tlcs5sjdkv8776g5v8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrP2A8xgtj27fer_nR4vbzLhtZC8AcCwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260699372816-dhcfn0c23pq279hn2rgp1302v25atg3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260699372816:android:14a88bcad11b75b558b995",
+        "android_client_info": {
+          "package_name": "com.rishav.gloginexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260699372816-7j1tbredvh4s6umgssvfjjt1seqm0nvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rishav.gloginexample",
+            "certificate_hash": "0aff68342237316b78c9e4d9c16ceecd8e8fb3c9"
+          }
+        },
+        {
+          "client_id": "260699372816-hqii6vo4rknd7tlcs5sjdkv8776g5v8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrP2A8xgtj27fer_nR4vbzLhtZC8AcCwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260699372816-dhcfn0c23pq279hn2rgp1302v25atg3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
