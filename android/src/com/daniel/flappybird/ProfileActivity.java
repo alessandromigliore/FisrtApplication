@@ -5,13 +5,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -26,6 +30,8 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 
+
+
 public class ProfileActivity extends AppCompatActivity {
 
 
@@ -37,6 +43,16 @@ public class ProfileActivity extends AppCompatActivity {
     private DatabaseReference mDatabase;
     private DatabaseReference UsersRef;
     FirebaseDatabase rootNode;
+    TextView score;
+
+    int initValue;
+    int value;
+
+    int highscore;
+    int score2=0;
+
+    static final String PREFS_NAME = "ScoreGame";
+    Preferences preferences;
 
 
 
@@ -51,6 +67,16 @@ public class ProfileActivity extends AppCompatActivity {
         mail = findViewById(R.id.mail);
         mAuth=FirebaseAuth.getInstance();
         btnSingle=findViewById(R.id.btnSingle);
+        score=findViewById(R.id.score);
+
+
+        SharedPreferences preferences = getSharedPreferences("High Scores", Context.MODE_PRIVATE);
+        value = preferences.getInt("highScore",0);
+
+
+        score.setText(""+value);
+
+
 
 
 
@@ -90,7 +116,7 @@ public class ProfileActivity extends AppCompatActivity {
             String username =signInAccount.getDisplayName();
             String email = signInAccount.getEmail();
 
-            UserHelperClass addNewUser= new UserHelperClass(username,email);
+            UserHelperClass addNewUser= new UserHelperClass(username,email,initValue);
             rootNode=FirebaseDatabase.getInstance();
             mDatabase = rootNode.getReference("users");
             FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -101,6 +127,7 @@ public class ProfileActivity extends AppCompatActivity {
         if(signInAccount != null){
             name.setText(signInAccount.getDisplayName());
             mail.setText(signInAccount.getEmail());
+
         }
 
 
@@ -124,8 +151,9 @@ public class ProfileActivity extends AppCompatActivity {
             for (DataSnapshot snap : dataSnapshot.getChildren()) {
                 UserHelperClass user = snap.getValue(UserHelperClass.class);
                 if (!(user.getUsername().equals(""))) {
-
+                    
                     name.setText(user.getUsername());
+
 
                 }
 

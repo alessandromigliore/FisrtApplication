@@ -2,6 +2,7 @@ package com.daniel.flappybird;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -11,6 +12,10 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Circle;
 import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Rectangle;
+
+
+
+
 
 import java.util.Random;
 
@@ -24,6 +29,13 @@ public class FlappyBird extends ApplicationAdapter {
 	Texture bottomTube;
 	Texture gameover;
 	ShapeRenderer shapeRender;
+
+
+	int highscore;
+
+
+
+
 
 
 	int flapstate = 0;
@@ -54,6 +66,7 @@ public class FlappyBird extends ApplicationAdapter {
 
 	@Override
 	public void create () {
+
 		batch = new SpriteBatch();
 		background_day= new Texture("background-day.png");
 		birds = new Texture[3];
@@ -84,6 +97,8 @@ public class FlappyBird extends ApplicationAdapter {
 		startGame();
 
 	}
+
+
 
 	public void startGame(){
 
@@ -165,6 +180,17 @@ public class FlappyBird extends ApplicationAdapter {
 			batch.draw(gameover , Gdx.graphics.getWidth() /3 -  gameover.getWidth() / 2 ,
 					Gdx.graphics.getHeight() / 2 - gameover.getHeight() / 2 ,
 					gameover.getWidth() * 3 , gameover.getHeight() *3 );
+
+			Preferences scores = Gdx.app.getPreferences("High Scores");
+
+
+			this.highscore = scores.getInteger("highScore", 0);
+			if(highscore < score) {
+				scores.putInteger("highScore", score);
+				scores.flush();
+
+			}
+
 
 
 			if (Gdx.input.justTouched()) {

@@ -3,7 +3,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,11 +29,14 @@ public class RegisterActivity extends AppCompatActivity {
     private ProgressDialog mLoadingBar;
     FirebaseDatabase rootNode;
     DatabaseReference reference;
+    int value;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+
 
         btn=findViewById(R.id.alreadyHaveAccount);
         inputUsername=findViewById(R.id.inputUsername);
@@ -119,7 +124,7 @@ public class RegisterActivity extends AppCompatActivity {
         String email = inputEmail.getText().toString();
 
 
-        UserHelperClass addNewUser= new UserHelperClass(username,email);
+        UserHelperClass addNewUser= new UserHelperClass(username,email,value);
 
         reference.child(username).setValue(addNewUser);
 
